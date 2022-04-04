@@ -1,0 +1,11 @@
+const path = require('path')
+
+module.exports = {
+    'config': path.resolve('./src/database/config', 'config.js'),
+    'models-path': path.resolve('./src/database/models'),
+    'seeders-path': path.resolve('./src/database/seeders'),
+    'migrations-path': path.resolve('./src/database/migrations')
+}
+
+/* Después de crear este archivo: .sequelize en la carpeta raíz del proyecto, pondremos toda esta configuración.
+Si tener en cuenta la ruta, en el caso de que hagamos este archivo dentro de la carpeta src  */
